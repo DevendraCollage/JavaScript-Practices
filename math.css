@@ -1,0 +1,20 @@
+/* This is the main heading style */
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* This is the first heading CSS of the form */
+.head1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* This button group CSS */
+.btnDiv {
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+/* This is only for single heading CSS */
+p {
+  font-family: "Courier New", Courier, monospace;
+}
