@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy the text to the Clipboard</title>
+    <script src="CopyStringToTheClipboard.js"></script>
+  </head>
+  <body>
+    <h1>Copy the given text to the Clipboard</h1>
+
+    <input type="text" id="CLIP" />
+
+    <button onclick="copyOfTheText()">Copy</button>
+
+    <p>
+      Click on the button to copy the text from the text field.<br />
+      Try to paste the text (e.g. ctrl+v) afterwards in a different window, to
+      see the effect.
+    </p>
+
+    <p id="clp"></p>
+  </body>
+</html>
