@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-button {
+        background-color: #52e5b4;
+        color: #333;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+      .dropdown-options {
+        display: none;
+        position: absolute;
+        background-color: #4ec42a;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        z-index: 1;
+      }
+      .dropdown-option {
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+      }
+      .dropdown-option:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropdown-button">Select a Subject</button>
+      <ul id="dropdown-options" class="dropdown-options">
+        <li class="dropdown-option">Python</li>
+        <li class="dropdown-option">Java</li>
+        <li class="dropdown-option">Dotnet</li>
+        <li class="dropdown-option">ReactJS</li>
+        <li class="dropdown-option">AngularJS</li>
+      </ul>
+    </div>
+    <script src="DropdownMenu.js" />
+  </body>
+</html>
