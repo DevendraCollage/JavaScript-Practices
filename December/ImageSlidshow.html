@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slideshow {
+        border: 5px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+      }
+
+      .slideshow img {
+        width: 300px;
+        height: 300px;
+      }
+
+      #previousBtn {
+        margin-right: 15px;
+        border: 2px solid red;
+        border-radius: 5px;
+      }
+
+      #nextBtn {
+        margin-left: 15px;
+        border: 2px solid red;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow">
+      <button id="previousBtn">Previous</button>
+      <img src="image1.jpg" alt="Nature" id="image" />
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <script src="ImageSlidshow.js"></script>
+  </body>
+</html>
