@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Toggle Switch</title>
+
+    <!-- Simple some CSS -->
+    <style>
+      .toggle {
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        position: relative;
+        border-radius: 34px;
+        background-color: #ccd;
+        cursor: pointer;
+        transition: background-color 0.5s;
+      }
+
+      .toggle::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #dd5e1a;
+        top: 4px;
+        left: 4px;
+        transition: transform 0.5s;
+      }
+
+      .toggle.on {
+        background-color: #46ab7d;
+      }
+
+      .toggle.on::before {
+        transform: translateX(26px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toggle"></div>
+
+    <!-- External JS File -->
+    <script src="InteractiveToggleSwitch.js"></script>
+  </body>
+</html>

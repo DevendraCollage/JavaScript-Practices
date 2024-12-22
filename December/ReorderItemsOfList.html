@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag-and-Drop Reorder Items</title>
+
+    <!-- Simple CSS -->
+    <style>
+      .drag-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .drag-item {
+        background-color: #cc56ff;
+        padding: 10px;
+        margin-bottom: 5px;
+        cursor: move;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="drag-list" id="dragList">
+      <li class="drag-item" draggable="true">Mobile</li>
+      <li class="drag-item" draggable="true">Laptop</li>
+      <li class="drag-item" draggable="true">Desktop</li>
+      <li class="drag-item" draggable="true">Television</li>
+      <li class="drag-item" draggable="true">Radio</li>
+    </ul>
+
+    <!-- Link the external JS file -->
+    <script src="ReorderItemsOfList.js"></script>
+  </body>
+</html>
