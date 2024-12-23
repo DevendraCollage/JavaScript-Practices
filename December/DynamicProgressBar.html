@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Progress Bar</title>
+
+    <!-- Some simple CSS -->
+    <style>
+      .progress-bar {
+        width: 300px;
+        height: 20px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .progress-bar-fill {
+        height: 100%;
+        background-color: #4caf50;
+        transition: width 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress-bar">
+      <div class="progress-bar-fill" id="progress"></div>
+    </div>
+
+    <!-- External JS File -->
+    <script src="DynamicProgressBar.js"></script>
+    <script>
+      updateProgress(30);
+    </script>
+  </body>
+</html>
